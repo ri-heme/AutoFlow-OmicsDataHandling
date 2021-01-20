@@ -1,7 +1,7 @@
 """Standardization.
 
 With this module, chemical compounds from varying formats can be standardized for compatibility with reaction rules.
-This module borrows the `rpchemtools <https://github.com/brsynth/rpchemtools>` toolbox by Jean-Loup Faulon's Lab.
+This module borrows from the `rpchemtools <https://github.com/brsynth/rpchemtools>` toolbox by Jean-Loup Faulon's Lab.
 """
 
 from lazy_object_proxy import Proxy

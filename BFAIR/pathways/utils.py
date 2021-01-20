@@ -4,7 +4,7 @@ from rdkit.Chem import AllChem
 from BFAIR.pathways.standardization import standardize
 
 
-def get_molecular_fingerprint(input_compound, input_type, **kwargs):
+def get_molecular_fingerprint(input_compound, input_type="inchi", **kwargs):
     """
     Returns the extended-connectivity fingerprint of a compound.
 
@@ -15,7 +15,7 @@ def get_molecular_fingerprint(input_compound, input_type, **kwargs):
     input_type : {'inchi', 'smiles'}
         Type of notation describing the input compound.
     **kwargs
-        Standardization parameters, see `standardize`.
+        Standardization parameters applied to the input compound, see `BFAIR.pathways.standardization.standardize`.
 
     Returns
     -------
@@ -39,7 +39,7 @@ def get_molecular_fingerprint(input_compound, input_type, **kwargs):
     ]
 
 
-def get_tanimoto_sim(a_fingerprint, another_fingerprint):
+def calculate_similarity(a_fingerprint, another_fingerprint):
     """
     Calculates the structural similarity score between two molecules.
 
