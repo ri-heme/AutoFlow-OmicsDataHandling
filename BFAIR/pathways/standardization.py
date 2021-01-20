@@ -51,6 +51,7 @@ def _neutralize_charge(compound):
             compound = Chem.ReplaceSubstructs(compound, charged_pat, uncharged_pat)[0]
     compound.UpdatePropertyCache()
     Chem.SanitizeMol(compound, sanitizeOps=Chem.SanitizeFlags.SANITIZE_ALL, catchErrors=False)
+    return compound
 
 
 def _count_non_hs_atoms(compound):
@@ -100,7 +101,7 @@ def standardize(compound: Chem.Mol, add_hs=True, remove_stereo=True, thorough=Fa
     if thorough:
         for atom in compound.GetAtoms():
             atom.setIsotope(0)
-        _neutralize_charge(compound)
+        compound = _neutralize_charge(compound)
         Chem.SanitizeMol(compound, sanitizeOps=Chem.SanitizeFlags.SANITIZE_ALL, catchErrors=False)
 
     # remove stereochemistry
@@ -116,10 +117,10 @@ def standardize(compound: Chem.Mol, add_hs=True, remove_stereo=True, thorough=Fa
     Chem.SanitizeMol(compound, sanitizeOps=Chem.SanitizeFlags.SANITIZE_ALL, catchErrors=False)
 
     # neutralize charge
-    _neutralize_charge(compound)
+    compound = _neutralize_charge(compound)
     Chem.SanitizeMol(compound, sanitizeOps=Chem.SanitizeFlags.SANITIZE_ALL, catchErrors=False)
 
     # add protons
     if add_hs:
-        Chem.AddHs(compound, explicitOnly=False, addCoords=True)
+        return Chem.AddHs(compound, explicitOnly=False, addCoords=True)
     return compound
