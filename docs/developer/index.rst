@@ -16,12 +16,17 @@ Guidelines
 
 - Please use the `GitFlow model <https://datasift.github.io/gitflow/IntroducingGitFlow.html>`_.
 - Please use `Numpy docstrings <https://numpydoc.readthedocs.io/en/latest/format.html>`_.
-- Please use the following standard for commit messages
+- Please use the following `standard prefixes for commit messages <https://www.conventionalcommits.org/en/v1.0.0/>`_:
 
-    - ``fix: ...`` for all commits that deal with fixing an issue
-    - ``feat: ...`` for all commits that deal with adding a new feature
-    - ``tests: ...`` for all commits that deal with unit testing
-    - ``build: ...`` for all commits that deal with the CI infrastructure and deployment
+    - ``fix``: for all commits that deal with fixing an issue,
+    - ``feat``: for all commits that deal with adding a new feature,
+    - ``test``: for all commits that deal with unit testing,
+    - ``build``: for all commits that deal with the CI infrastructure and deployment,
+    - ``docs``: to identify documentation changes,
+    - ``perf``: to identify changes related to performance improvements,
+    - ``style``: to identify changes related to styling (e.g., indentations, semi-colons, quotes, etc.), and
+    - ``refactor``: for all commits that deal with changes in code that neither add or fix a feature (e.g., renaming
+      variables, simplifying codes, removing redundant code, etc.).
 
 - Please use the following PR title and description standards:
 
