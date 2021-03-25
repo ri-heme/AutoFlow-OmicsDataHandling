@@ -5,5 +5,5 @@ API Reference
    :maxdepth: 2
 
    introduction
+   io/index
    pathways/index
-   database_structure
