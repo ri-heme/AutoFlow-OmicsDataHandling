@@ -20,6 +20,7 @@ With these functions, one can convert a string depection of a molecule (such as 
 object. These molecules are standardized for the sake of cohesiveness.
 
 .. autosummary::
+   :toctree: generated/
 
    get_compound
    standardize
@@ -33,6 +34,7 @@ useful tools to compare the similarities between two molecules. For instance, th
 (indices) divided by their union.
 
 .. autosummary::
+   :toctree: generated/
 
    calculate_similarity
    get_molecular_fingerprint

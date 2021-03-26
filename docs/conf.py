@@ -22,7 +22,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
-    "nb2plots",
     "numpydoc",
 ]
 templates_path = ['_templates']
@@ -32,6 +31,18 @@ numpydoc_show_class_members = False
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'furo'
+html_title = "BFAIR"
+html_theme = 'sphinx_material'
+html_theme_options = {
+    "repo_url": "https://github.com/AutoFlowResearch/BFAIR",
+    "repo_name": "BFAIR",
+    "color_primary": "indigo",
+    "color_accent": "pink",
+    "globaltoc_depth": 3
+}
+html_sidebars = {
+    "**": ["globaltoc.html", "localtoc.html"]
+}
 html_static_path = ['_static']
-html_css_files = ["style.css"]
+# html_css_files = ["style.css"]
+html_collapsible_definitions = True

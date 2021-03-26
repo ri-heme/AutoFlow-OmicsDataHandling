@@ -6,6 +6,7 @@ Overview
 
 .. currentmodule:: BFAIR.pathways
 .. autoclass:: RuleLibrary
+   :exclude-members:
 
 Methods
 -------
@@ -18,6 +19,7 @@ connection to the database is automatically established. However, if one desires
 open and close the database.
 
 .. autosummary::
+   :toctree: generated/
 
    RuleLibrary.open
    RuleLibrary.close
@@ -30,6 +32,7 @@ For instance, one can select the reactions that are only available in yeast or r
 Multiple filters can be combined.
 
 .. autosummary::
+   :toctree: generated/
 
    RuleLibrary.filter_by_compound
    RuleLibrary.filter_by_diameter
@@ -47,6 +50,7 @@ Further pruning over this list can produce a list of off-products that arise fro
 activity.
 
 .. autosummary::
+   :toctree: generated/
 
    RuleLibrary.apply_to
    RuleLibrary.list_products

@@ -8,7 +8,7 @@ Documentation
 =============
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    install
    reference/index
