@@ -34,3 +34,4 @@ numpydoc_show_class_members = False
 
 html_theme = 'furo'
 html_static_path = ['_static']
+html_css_files = ["style.css"]
