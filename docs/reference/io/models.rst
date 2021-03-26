@@ -22,7 +22,6 @@ Alternatively (and equivalently), one can manually load genome-scale models
 using the following functions:
 
 .. autosummary::
-   :toctree: generated/
 
    load_cbm
    load_data

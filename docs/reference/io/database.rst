@@ -41,7 +41,6 @@ The ``struct`` module contains functions to read, create, merge, and read
 struct files.
 
 .. autosummary::
-   :toctree: generated/
 
    struct.from_inchis
    struct.from_products_dict
@@ -79,7 +78,6 @@ The ``mapping`` module contains functions to read, create, merge, and read
 mapping files.
 
 .. autosummary::
-   :toctree: generated/
 
    mapping.from_struct
    mapping.merge
