@@ -1,3 +1,4 @@
-numpyd2oc
-furo
-nb2plots
+sphinx==3.4.3
+numpydoc>=1.1
+nb2plots>=0.6
+furo>=2020.12

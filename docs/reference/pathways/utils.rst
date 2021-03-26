@@ -6,7 +6,7 @@ Utils
 The utils module offers a toolbox to handle chemical compounds and calculate structural similarity scores between them.
 It must be manually imported:
 
-.. nbplot::
+.. code-block::
 
    >>> from BFAIR.pathways import utils
 
