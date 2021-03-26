@@ -22,7 +22,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
-    "sphinx_rtd_theme",
     "nb2plots",
     "numpydoc",
 ]
@@ -33,5 +32,5 @@ numpydoc_show_class_members = False
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 html_static_path = ['_static']
