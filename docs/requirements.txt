@@ -1,3 +1,4 @@
-numpydoc
+sphinx >= 3.0
+numpyd2oc
 sphinx-rtd-theme
 nb2plots
