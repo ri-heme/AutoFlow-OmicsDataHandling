@@ -5,10 +5,8 @@ Toolbox of functions to parse chemical compounds and calculate similarity scores
 
 __all__ = ["get_compound", "get_molecular_fingerprint", "calculate_similarity", "standardize"]
 
-from rdkit import Chem
-from rdkit.Chem import AllChem
-
 from BFAIR.pathways.standardization import standardize
+from BFAIR.rdkit import Chem, AllChem
 
 
 def get_compound(input_compound, input_type="inchi", **kwargs) -> AllChem.Mol:

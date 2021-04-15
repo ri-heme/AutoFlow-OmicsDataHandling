@@ -9,7 +9,8 @@ import re
 from collections import namedtuple
 
 import pandas as pd
-from rdkit import Chem
+
+from BFAIR.rdkit import Chem
 
 _CHARGE_REGEX = re.compile(r"((?:\+|-)\d*)$")
 FILE_COLUMNS = ["id", "formula", "unused_smiles", "unused_inchi"]

@@ -14,8 +14,6 @@ from itertools import chain
 from typing import Generator
 
 import pandas as pd
-from rdkit import Chem
-from rdkit.Chem import AllChem
 
 from BFAIR import models
 from BFAIR.io.remote import LOCAL_PATH, fetch_remote
@@ -24,6 +22,7 @@ from BFAIR.pathways.constants import CURRENCY_METABOLITES
 from BFAIR.pathways.standardization import standardize
 from BFAIR.pathways.utils import get_compound, get_molecular_fingerprint
 from BFAIR.pathways import _queries as q
+from BFAIR.rdkit import Chem, AllChem
 
 
 _ReactionResult = namedtuple("ReactionResult", ["rule_id", "reaction_id", "product_sets"])

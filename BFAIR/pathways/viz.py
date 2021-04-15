@@ -12,8 +12,7 @@ import matplotlib.pyplot as plt
 
 import networkx as nx
 
-from rdkit import Chem
-from rdkit.Chem import Draw
+from BFAIR.rdkit import Chem, Draw
 
 # Remove white background and highlight atoms/bonds with white circles/lines, respectively
 _DRAWING_OPTIONS = Draw.MolDrawOptions()

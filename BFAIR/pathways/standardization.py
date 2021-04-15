@@ -7,8 +7,8 @@ This module borrows from the `rpchemtools <https://github.com/brsynth/rpchemtool
 __all__ = ["standardize"]
 
 from lazy_object_proxy import Proxy
-from rdkit import Chem
-from rdkit.Chem import AllChem, Descriptors
+
+from BFAIR.rdkit import Chem, AllChem, Descriptors
 
 _NEUTRALIZE_PATTERNS = Proxy(
     lambda: [
